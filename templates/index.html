@@ -57,12 +57,12 @@
     {% if checked_keys %}
     <table>
         <tr>
-            <th>Key ID</th>
+            <th>User ID</th>
             <th>User's Email</th>
-            <th>Valid/Expired</th>
+            <th>Status</th>
         </tr>
         {% for key, value in checked_keys.items() %}
-        <tr>
+        <tr style="background-color:{% if value[1] == 'Valid' %}#ccffcc{% else %}#ffcccc{% endif %};">
             <td>{{ key }}</td>
             <td>{{ value[0] }}</td>
             <td>{{ value[1] }}</td>

@@ -1,5 +1,5 @@
 {
-    "id": "api-key-12345",
+    "id": "api-key-0004",
     "ocid": "ocid1.api-key.oc1..exampleuniqueID",
     "schemas": [
         "urn:ietf:params:scim:schemas:oracle:idcs:apiKey"
@@ -23,6 +23,6 @@
         "value": "user-67890",
         "ocid": "ocid1.user.oc1..exampleuniqueID",
         "display": "johnd",
-        "name": "John Doe"
+        "name": "Sarah Johnson"
     }
 }
