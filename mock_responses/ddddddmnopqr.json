@@ -1,0 +1,28 @@
+{
+    "id": "api-key-12345",
+    "ocid": "ocid1.api-key.oc1..exampleuniqueID",
+    "schemas": [
+        "urn:ietf:params:scim:schemas:oracle:idcs:apiKey"
+    ],
+    "meta": {
+        "resourceType": "ApiKey",
+        "created": "2025-01-15T12:34:56Z",
+        "lastModified": "2023-12-01T09:21:10Z",
+        "location": "https://idcs.example.com/api/v1/ApiKeys/api-key-12345",
+        "version": "1"
+    },
+    "idcsCreatedBy": {
+        "value": "user-67890",
+        "type": "User",
+        "display": "johnd",
+        "ocid": "ocid1.user.oc1..exampleuniqueID"
+    },
+    "fingerprint": "12:34:56:78:90:ab:cd:ef:12:34:56:78:90:ab:cd:ef",
+    "key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkq...\n-----END PUBLIC KEY-----",
+    "user": {
+        "value": "user-67890",
+        "ocid": "ocid1.user.oc1..exampleuniqueID",
+        "display": "john.doe@example.com",
+        "name": "John Doe"
+    }
+}
