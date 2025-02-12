@@ -4,16 +4,15 @@ import requests
 
 from sending_mail import send_mail
 
-# TODO: updates api address to oracle
 BASE_URL = 'http://127.0.0.1:5000/admin/v1/ApiKeys/'
 
 
 def is_key_expired(user_id, user_mail):
     threshold_date = datetime.utcnow() - timedelta(days=90)
 
-    diec = BASE_URL + user_id
+    path = BASE_URL + user_id
 
-    response = requests.get(diec)
+    response = requests.get(path)
 
     api_key_data = response.json()
 

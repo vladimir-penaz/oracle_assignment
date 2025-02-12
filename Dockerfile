@@ -4,10 +4,10 @@ FROM python:3.9-slim
 # Set the working directory
 WORKDIR /app
 
-# Copy the app.py directory
-COPY app.py /app
+# Copy the app directory
+COPY app /app
 
-# Copy requirements.txt (if it's outside "app.py/")
+# Copy requirements.txt
 COPY requirements.txt /app/
 
 # Install dependencies
@@ -17,7 +17,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5000
 
 # Set environment variables
-ENV FLASK_APP=app.app
+ENV FLASK_APP=main
+ENV FLASK_RUN_HOST=0.0.0.0
 
-# Run the app.py
-CMD ["python", "-m", "app"]
+# Run the application
+CMD ["python", "-m", "flask", "run"]
