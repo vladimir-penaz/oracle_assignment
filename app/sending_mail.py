@@ -4,14 +4,10 @@ from email.mime.multipart import MIMEMultipart
 from dotenv import load_dotenv
 import os
 
-SMTP_SERVER = "smtp.gmail.com"
-SMTP_PORT = 587
 
 def send_mail(key_id, user_name, user_mail):
     load_dotenv()
-    # Email configuration
 
-    # Drafting the email
     subject = "Action Required: Update or Delete Your Expired OCI API Key"
     body = f"""
             Dear {user_name},
@@ -33,7 +29,7 @@ def send_mail(key_id, user_name, user_mail):
     msg.attach(MIMEText(body, "plain"))
 
     try:
-        server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
+        server = smtplib.SMTP(os.getenv('SMTP_SERVER'), int(os.getenv('SMTP_PORT')))
         server.starttls()  # Secure the connection
         server.login(os.getenv('SENDER_EMAIL'), os.getenv('SENDER_PASSWORD'))
         server.sendmail(os.getenv('SENDER_EMAIL'), user_mail, msg.as_string())

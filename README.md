@@ -1,11 +1,13 @@
 # Oracle assignment
 
 
-### **Before runing the app you have to add your .env file in app folder**
-
+### **Before runing the app you have to add .env file in app folder**
+It's necessary to set up for e-mail sending
 ```
 SENDER_EMAIL = <YOUR MAIL>
 SENDER_PASSWORD = <YOUR APP PASSWORD> 
+SMTP_SERVER = "smtp.gmail.com"
+SMTP_PORT = 587
 ```
 
 ### **To run the code just execute the commands:**

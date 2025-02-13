@@ -1,0 +1,52 @@
+{
+  "list_users": [
+    {
+      "id": "ocid1.user.oc1..aaaaaaaaxyz",
+      "name": "johndoe",
+      "time_created": "2023-11-01T12:34:56",
+      "compartment_id": "ocid1.tenancy.oc1..example",
+      "email": "peny753@seznam.cz",
+      "lifecycle_state": "ACTIVE",
+      "description": "John Doe",
+      "is_mfa_activated": true,
+      "freeform_tags": {},
+      "defined_tags": {}
+    },
+    {
+      "id": "ocid1.user.oc1..ccccccghijkl",
+      "name": "alicew",
+      "time_created": "2022-11-03T09:45:30",
+      "compartment_id": "ocid1.tenancy.oc1..tenant456",
+      "email": "peny753@seznam.cz",
+      "lifecycle_state": "ACTIVE",
+      "description": "Alice Williams",
+      "is_mfa_activated": true,
+      "freeform_tags": {},
+      "defined_tags": {}
+    },
+    {
+      "id": "ocid1.user.oc1..eeeeeeuvwxyz",
+      "name": "sarahj",
+      "time_created": "2020-12-05T12:10:05",
+      "compartment_id": "ocid1.tenancy.oc1..tenant999",
+      "email": "peny753@seznam.cz",
+      "lifecycle_state": "ACTIVE",
+      "description": "Sarah Johnson",
+      "is_mfa_activated": true,
+      "freeform_tags": {},
+      "defined_tags": {}
+    },
+    {
+      "id": "ocid1.user.oc1..ddddddmnopqr",
+      "name": "bobm",
+      "time_created": "2021-07-21T16:20:15",
+      "compartment_id": "ocid1.tenancy.oc1..tenant789",
+      "email": "peny753@seznam.cz",
+      "lifecycle_state": "ACTIVE",
+      "description": "Bob Miller",
+      "is_mfa_activated": true,
+      "freeform_tags": {},
+      "defined_tags": {}
+    }
+  ]
+}
